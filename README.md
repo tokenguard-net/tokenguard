@@ -33,7 +33,6 @@ import { wrapFetchWithPayment } from '@coinbase/x402-fetch';
 
 const fetch = wrapFetchWithPayment(globalThis.fetch, wallet);
 
-// Check a Pump.fun token
 const res = await fetch('https://tokenguard.net/verdict/pump', {
   method: 'POST',
   body: JSON.stringify({ 
@@ -93,18 +92,15 @@ Full API reference, integration guides, and code examples:
 ## MCP Server
 
 ```bash
-# Available on Smithery
 npx @smithery/cli install tokenguard
 ```
 
-[npm package](https://www.npmjs.com/package/@scoopflashman/baseguard-mcp) · 
-[Smithery listing](https://smithery.ai) · 
-[Glama listing](https://glama.ai)
+[Smithery listing](https://smithery.ai) · [Glama listing](https://glama.ai)
 
 ## License
 
-MIT — see [LICENSE](LICENSE)
+MIT
 
 ---
 
-*Built on Base · Solana · Ethereum · Arbitrum*
+*Built on Base · Solana · Ethereum · Arbitrum · [tokenguard.net](https://tokenguard.net)*
